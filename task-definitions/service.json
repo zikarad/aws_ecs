@@ -1,0 +1,17 @@
+
+  "containerDefinitions": [
+    {
+      "cpu": 256,
+      "image": "nginx:latest",
+      "memory": 512,
+      "name": "nginx",
+      "networkMode": "awsvpc",
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ]
+    }
+  ]
+
